@@ -5,9 +5,24 @@ keywords:
 category:   Release
 tags:		[软件]
 date: 2016/3/9 21:38:22
-description: apt-get brew pip npm nvm
+description:  只需要提交代码，喝杯咖啡回来，数台或成百上千的集群已经运行中
 
 ---
+
+ 只需要提交代码，喝杯咖啡回来，数台或成百上千的集群已经运行中
+
+ 几年以前都不敢想象，那时候系统不成熟，都是开发人员直接上机房
+
+<!--more-->
+
+ - 曾经在没有DVD的时代，带着5/6张光盘从裸机开始部署系统
+ - 数百页的安装手册，其实不算什么 -
+ - 糟糕的是一个命令打错，就得从新来过，但是 ` 和 ' ， l 和 1 实在是区分不清啊 -
+ - 硬件的稳定和兼容，不把开发折腾死不罢休，期初是 SUN 机器，除了贵点一切都好。卖了以后公司想切换结果成了安腾的小白鼠。。。。
+
+ 现在通过虚拟化镜像文件，搭配Orchestration系统一起使用，一个描述文件，完成所有工作。赞！！！
+
+ 这周趁 MAC 重装，在家顺便就一起捣腾了Windows、 Ubuntu（基于windows上的vm player虚拟）、Debian（NAS），我把自己分时调度到各个的键盘上^_^，体会也是相比以前一切简化太多
 
 ## 软件安装方式的巨大变化 ##
 
@@ -20,24 +35,17 @@ description: apt-get brew pip npm nvm
 
  > CPP仍旧高傲的一个人玩
 
-<!--more-->
-
 ----------
-
 ## 各个仓库 ##
-
- - MAC OX : homebrew
- - Linux : apt-get (我用 Ubuntu)
- - Windows : 微软大爷
-
+ - MAC OS : homebrew
+ - Linux : apt (Ubuntu、Debian)
+ - Windows : 微软大爷不提供
 ----------
-
- - CPP : 自己从内存管理开始写
+ - CPP : 从来都是内存管理、连接池、线程池、日志都得自己写
  - JAVA : maven
  - Python : pip
  - Ruby : gem
  - Nodejs : npm
-
 ----------
  - Sublime : Packge Control
  - Eclipse : Plugins

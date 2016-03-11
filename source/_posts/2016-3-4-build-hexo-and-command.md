@@ -7,7 +7,7 @@ description: Hexo 备忘录
 
 ---
 
-##搭建流程##
+## 搭建流程##
  需要两个分支或者仓库，分别用来保存生成结果和源文件
  - 创建仓库，xx.github.io
  - 创建两个分支：master 与 dev 或者两个仓库
@@ -19,11 +19,11 @@ description: Hexo 备忘录
 
 <!--more-->
 
-##日常修改##
+## 日常修改##
  - 在本地对博客进行修改
  - 分别发布到两个仓库（用脚本自动化）
 
-##更换机器##
+## 更换机器##
  - 当重装电脑之后，或者想在其他电脑上修改博客，可以使用下列步骤：
  - 使用git clone git@github.com:CrazyMilk/CrazyMilk.github.io.git拷贝仓库（默认分支为hexo）；
  - 在本地新拷贝的CrazyMilk.github.io文件夹下通过Git bash依次执行下列指令：npm install hexo、npm install、npm install hexo-deployer-git（记得，不需要hexo init这条指令）。

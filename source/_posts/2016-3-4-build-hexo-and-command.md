@@ -35,7 +35,8 @@ description: Hexo 备忘录
 
 ## Quick Start
 
-### Create a new post
+##
+# Create a new post
 
 ``` bash
 $ hexo new "My New Post"

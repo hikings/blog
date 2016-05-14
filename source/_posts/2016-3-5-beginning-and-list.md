@@ -2,8 +2,8 @@
 layout:     post
 title:      从折腾开始，我的计划
 keywords:
-category:   note
-tags:		[随笔]
+category:   [note]
+tags:		 [note]
 date: 2016/3/5 20:18:43
 description: 遇坑，从折腾开始，新旧对比中受益匪浅
 

@@ -2,8 +2,8 @@
 layout:     post
 title:      软件进步方式的巨大变化
 keywords:
-category:   Release
-tags:		[软件]
+category:  [software package management]
+tags:		[software package management]
 date: 2016/3/9 21:38:22
 description:  只需要提交代码，喝杯咖啡回来，数台或成百上千的集群已经运行中
 
@@ -16,7 +16,7 @@ description:  只需要提交代码，喝杯咖啡回来，数台或成百上千
 <!--more-->
 
  - 曾经在没有DVD的时代，带着5/6张光盘从裸机开始部署系统
- - 数百页的安装手册，其实不算什么 -
+ - 数百页的安装手册，其实不算什么
  - 糟糕的是一个命令打错，就得从新来过，但是 ` 和 ' ， l 和 1 实在是区分不清啊 -
  - 硬件的稳定和兼容，不把开发折腾死不罢休，启初是 SUN 机器，除了贵点一切都好。卖了以后公司想切换结果成了安腾的小白鼠。。。。
 
@@ -31,7 +31,7 @@ description:  只需要提交代码，喝杯咖啡回来，数台或成百上千
 
  - 这个所有程序员的痛，随着UNIX/LINUX文化的影响，大家逐渐把 yum、apt 这样安装软件的方式普及到了各个环境和语言
 
- > 当然 Windows 只算有半个
+ > 当然 Windows 只算有半个, Windows 10 引入的 应用商店，第一次有了官方的应用下载市场
 
  > CPP仍旧高傲的一个人玩
 
@@ -49,4 +49,8 @@ description:  只需要提交代码，喝杯咖啡回来，数台或成百上千
 ----------
  - Sublime : Packge Control
  - Eclipse : Plugins
+
+ 问题: 虽然好了很多，但是包管理软件依旧存在问题，还是很混乱
+ - 一种语言有多个包管理  ant -> maven - gradle -> sbt ,  easyinstall , pip
+ - 包仓库里的版本过旧，导致很多场景必须下载，从代码编译，又回到了原始社会
 

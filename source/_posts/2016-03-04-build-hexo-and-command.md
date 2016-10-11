@@ -50,6 +50,15 @@ $ npm install
 >  ask on [GitHub](https://github.com/hexojs/hexo/issues).
 
 
+## 常见问题
+
+### 发布后没有更新
+- 使用 hexo clean 命令, 然后重新生成
+- 删除 .deploy 目录, 然后重新发布
+
+
+
+
 ## 目录结构
 
 ``` bash

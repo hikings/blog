@@ -13,7 +13,7 @@ description: python27
 
 
 在工作环境中使用的是python 2.7.*，但是CentOS 6.4中默认使用的python版本是2.6.6，故需要升级版本。
-
+<!--more-->
 安装步骤如下：
 
 1,先安装GCC，用如下命令yum install gcc gcc-c++

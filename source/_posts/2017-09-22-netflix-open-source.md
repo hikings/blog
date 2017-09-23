@@ -1,4 +1,3 @@
-
 ---
 layout:     post
 title:      Netflix 开源项目推荐
@@ -6,23 +5,13 @@ keywords:
 category:   MachineLearning
 tags:
       - netflix
-      - opensource
+      - opensourcei
 
-date:        2017/9/22 12:01:33
-description: tensorflow
+date:        2017-09-22 22:52:50
+description: netfilex
 
 ---
-<!-- TOC -->
 
-- [联合作业执行引擎 Netflix Genie](#联合作业执行引擎-netflix-genie)
-- [持续交付平台 Spinnaker](#持续交付平台-spinnaker)
-- [云操作容错解决方案 SimianArmy](#云操作容错解决方案-simianarmy)
-- [分布式系统的延迟和容错库 Hystrix](#分布式系统的延迟和容错库-hystrix)
-- [数据管道服务 Suro](#数据管道服务-suro)
-- [分布式内存数据云存储 EVCache](#分布式内存数据云存储-evcache)
-- [云端负载均衡工具 Eureka](#云端负载均衡工具-eureka)
-
-<!-- /TOC -->
 
 ## 联合作业执行引擎 Netflix Genie
 https://www.oschina.net/p/netflix-genie
@@ -34,7 +23,7 @@ Fenzo 是一个使用 Java 语言编写的 Apache Mesos 框架的可扩展调度
 Fenzo 支持使用两种互补的策略集群自动缩放：
   ● 基于阈值
   ● 基于资源短缺分析
-
+<!--more-->
 ## 持续交付平台 Spinnaker
 https://www.oschina.net/p/spinnaker
 Spinnaker 是一个持续交付平台，它定位于将产品快速且持续的部署到多种云平台上。

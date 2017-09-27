@@ -409,6 +409,7 @@
     w.addEventListener('load', function () {
         loading.classList.remove('active');
         Blog.page.loaded();
+        menu.classList.add('hide');
         w.lazyScripts && w.lazyScripts.length && Blog.loadScript(w.lazyScripts)
     });
 

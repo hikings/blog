@@ -1,8 +1,9 @@
 ---
-title: Hexo Command
-category:   Static-Website
+title: Hexo mixture
+category:   
+    - BLOG
 tags:
-      - Static-Website
+    - BLOG
 date: 2016/3/4 21:48:45
 
 description: Hexo 备忘录
@@ -57,8 +58,6 @@ $ npm install
 - 删除 .deploy 目录, 然后重新发布
 
 
-
-
 ## 目录结构
 
 ``` bash
@@ -105,3 +104,85 @@ $ hexo deploy
 ```
 
 More info: [Deployment](https://hexo.io/docs/deployment.html)
+
+
+## 功能扩展
+
+### 支持Flowchart
+
+安装 hexo-filter-flowchart
+
+```shell
+npm install --save hexo-filter-flowchart
+```
+
+
+#### Usage
+
+This plugin is based on flowchart.js, so you can defined the chart as follow:
+
+```flow
+st=>start: Start|past:>http://www.google.com[blank]
+e=>end: End:>http://www.google.com
+op1=>operation: My Operation|past
+op2=>operation: Stuff|current
+sub1=>subroutine: My Subroutine|invalid
+cond=>condition: Yes
+or No?|approved:>http://www.google.com
+c2=>condition: Good idea|rejected
+io=>inputoutput: catch something...|request
+
+st->op1(right)->cond
+cond(yes, right)->c2
+cond(no)->sub1(left)->op1
+c2(yes)->io->e
+c2(no)->op2->e
+```
+
+
+#### Config
+
+_config.yml:
+```
+flowchart:
+  # raphael:   # optional, the source url of raphael.js
+  # flowchart: # optional, the source url of flowchart.js
+```
+
+### 支持Flowchart
+hexo-filter-sequence
+https://github.com/bubkoo/hexo-filter-sequence
+
+npm: Package Quality
+
+Generate UML sequence diagrams for Hexo.
+Install
+```shell
+npm install --save hexo-filter-sequence
+```
+
+#### Usage
+
+This plugin is based on js-sequence-diagrams, so you can defined the chart as follow:
+
+```sequence
+Alice->Bob: Hello Bob, how are you?
+Note right of Bob: Bob thinks
+Bob-->Alice: I am good thanks!
+```
+
+
+#### Config
+
+In your site's _config.yml:
+```
+sequence:
+  # webfont:     # optional, the source url of webfontloader.js
+  # snap:        # optional, the source url of snap.svg.js
+  # underscore:  # optional, the source url of underscore.js
+  # sequence:    # optional, the source url of sequence-diagram.js
+  # css: # optional, the url for css, such as hand drawn theme 
+  options: 
+    theme: 
+    css_class: 
+```

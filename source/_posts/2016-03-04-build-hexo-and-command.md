@@ -175,7 +175,8 @@ Bob-->Alice: I am good thanks!
 #### Config
 
 In your site's _config.yml:
-```
+
+```yaml
 sequence:
   # webfont:     # optional, the source url of webfontloader.js
   # snap:        # optional, the source url of snap.svg.js
@@ -186,3 +187,5 @@ sequence:
     theme: 
     css_class: 
 ```
+
+

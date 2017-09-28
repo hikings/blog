@@ -1,7 +1,9 @@
 var gulp = require('gulp');
     var minifycss = require('gulp-minify-css');
     var uglify = require('gulp-uglify');
+    var rename = require('gulp-rename');
     var htmlmin = require('gulp-htmlmin');
+    var concat = require('gulp-concat');
     var htmlclean = require('gulp-htmlclean');
 
     // 获取 gulp-imagemin 模块
@@ -28,10 +30,18 @@ var gulp = require('gulp');
     // 压缩 public/js 目录 js
     gulp.task('minify-js', function() {
         return gulp.src('./public/**/*.js')
+            .pipe(rename({suffix:'.min'}))
             .pipe(uglify())
             .pipe(gulp.dest('./public'));
     });
 
+    // 压缩 public/js 目录 js
+    gulp.task('minify-lazyjs', function() {
+        return gulp.src('./public/js/lazy/*.js')
+            .pipe(concat('lazy.min.js'))
+            .pipe(uglify())
+            .pipe(gulp.dest('./public/js/'));
+    });
 
     // 压缩图片任务
     // 在命令行输入 gulp images 启动此任务
@@ -50,5 +60,5 @@ var gulp = require('gulp');
 
     // 执行 gulp 命令时执行的任务
     gulp.task('default', [
-        'minify-html','minify-css','minify-js','images'
+        'minify-html','minify-css','minify-js','images','minify-lazyjs'
     ]);

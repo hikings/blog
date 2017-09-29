@@ -28,16 +28,24 @@ var gulp = require('gulp');
         .pipe(gulp.dest('./public'))
     });
     // 压缩 public/js 目录 js
+    gulp.task('minify-js-all', function() {
+        return gulp.src('./public/*.js')
+            // .pipe(rename({suffix:'.min'}))
+            .pipe(uglify())
+            .pipe(gulp.dest('./public/'));
+    });
+
     gulp.task('minify-js', function() {
-        return gulp.src('./public/**/*.js')
+        return gulp.src('./public/js/main.js')
             .pipe(rename({suffix:'.min'}))
             .pipe(uglify())
-            .pipe(gulp.dest('./public'));
+            .pipe(gulp.dest('./public/js'));
     });
 
     // 压缩 public/js 目录 js
     gulp.task('minify-lazyjs', function() {
         return gulp.src('./public/js/lazy/*.js')
+        // return gulp.src('./public/js/lazy/busuanzi.pure.mini.js','./public/js/lazy/search.js','./public/js/lazy/search.min.js')
             .pipe(concat('lazy.min.js'))
             .pipe(uglify())
             .pipe(gulp.dest('./public/js/'));
@@ -60,5 +68,5 @@ var gulp = require('gulp');
 
     // 执行 gulp 命令时执行的任务
     gulp.task('default', [
-        'minify-html','minify-css','minify-js','images','minify-lazyjs'
+        'minify-js-all','minify-html','minify-css','minify-js','images','minify-lazyjs'
     ]);

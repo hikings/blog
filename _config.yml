@@ -5,7 +5,7 @@
 # Site
 title: Life is like hiking
 subtitle: Keep It Simple,Stupid!
-description: ��ѧ�����ʡ���˼�����桢����
+description: Keep It Simple,Stupid!
 author: Kendall.j.
 language: zh-CN
 timezone:
@@ -14,7 +14,7 @@ timezone:
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: http://hikings.github.io/
 root: /
-permalink: :year/:month/:day/:title/
+permalink: :year:month/:title/
 permalink_defaults:
 
 # Directory
@@ -52,14 +52,14 @@ tag_map:
 ## 2: Enable pagination
 ## 1: Disable pagination
 ## 0: Fully Disable
-archive: 2
+archive: 1
 category: 2
 tag: 2
 # Date / Time format
 ## Hexo uses Moment.js to parse and display date
 ## You can customize the date format as defined in
 ## http://momentjs.com/docs/#/displaying/format/
-date_format: "MMM D YYYY"
+date_format: "MM-DD YYYY"
 time_format: HH:mm:ss
 
 # Pagination
